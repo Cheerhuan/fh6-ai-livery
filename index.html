@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FH6 AI Livery Generator — Viral Forza Horizon 6 Designs</title>
+  <meta name="description" content="Generate stunning Forza Horizon 6 liveries with AI. Turn anime, racing culture, and aesthetics into viral FH6 designs. Tokyo Drift, JDM, Cyberpunk styles." />
+  <meta name="keywords" content="forza horizon 6 livery, FH6 tuning, FH6 anime livery, FH6 JDM design, forza horizon 6 vinyl, FH6 Tokyo drift, FH6 car customization, AI livery generator" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="FH6 AI Livery Generator" />
+  <meta property="og:description" content="Generate viral Forza Horizon 6 liveries in seconds. AI-powered design for the next generation of FH6 creators." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🏎️</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ Particle Canvas ══════════ -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ══════════ HUD Overlay ══════════ -->
+  <div class="hud-overlay">
+    <div class="hud-corner hud-corner--tl"></div>
+    <div class="hud-corner hud-corner--tr"></div>
+    <div class="hud-corner hud-corner--bl"></div>
+    <div class="hud-corner hud-corner--br"></div>
+  </div>
+
+  <!-- ══════════ HUD Top Bar ══════════ -->
+  <div class="hud-top-bar">
+    <div class="hud-brand">
+      <span class="dot"></span>
+      FH6::LIVERY_ENGINE
+    </div>
+    <div class="hud-status">
+      <span class="status-indicator"></span>
+      SYSTEM ONLINE · v4.2.1
+    </div>
+  </div>
+
+  <!-- ══════════ HUD Bottom Bar ══════════ -->
+  <div class="hud-bottom-bar">
+    <div class="hud-scroll-indicator">↓ Scroll to explore</div>
+  </div>
+
+  <!-- ══════════ Navigation ══════════ -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-accent">FH6</span> Livery AI
+      </div>
+      <ul class="nav-links">
+        <li><a href="#generator">Generator</a></li>
+        <li><a href="#results">Gallery</a></li>
+        <li><a href="#community">Trending</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#cta" class="nav-cta">Launch App</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════ Hero Section ══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        AI-Powered · Forza Horizon 6
+      </div>
+
+      <h1 class="hero-title">
+        Generate Viral<br/>
+        <span class="title-accent">FH6 Liveries</span><br/>
+        in Seconds
+      </h1>
+
+      <p class="hero-subtitle">
+        Turn anime, racing culture, and aesthetics into stunning Forza Horizon 6 designs.
+        The future of FH6 customization is here.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#generator" class="btn-primary">
+          ⚡ Generate My Livery
+        </a>
+        <a href="#results" class="btn-secondary">
+          ▶ View Gallery
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════ Generator Section ══════════ -->
+  <section class="generator" id="generator">
+    <div class="container">
+      <div class="section-label reveal">FH6::AI_GENERATOR</div>
+      <h2 class="section-title reveal">Design Your Livery</h2>
+      <p class="section-subtitle reveal">Upload an image, describe your vision, and let AI create the perfect FH6 livery.</p>
+
+      <div class="generator-grid">
+        <!-- Upload Zone -->
+        <div class="upload-zone reveal-left">
+          <div class="upload-icon">📸</div>
+          <h4>Drop your inspiration</h4>
+          <p>Anime, car photos, aesthetics — anything goes</p>
+          <input type="file" id="image-upload" accept="image/*" />
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel reveal-right">
+          <div class="control-group">
+            <label>// Describe your vision</label>
+            <textarea class="prompt-input" id="prompt-input" placeholder="Neon drift car with cyberpunk reflections, cherry blossoms floating..."></textarea>
+          </div>
+
+          <div class="control-group">
+            <label>// Style aesthetic</label>
+            <div class="style-pills">
+              <button class="style-pill active" data-style="Tokyo Drift">Tokyo Drift</button>
+              <button class="style-pill" data-style="Initial D">Initial D</button>
+              <button class="style-pill" data-style="Cyberpunk">Cyberpunk</button>
+              <button class="style-pill" data-style="JDM Street">JDM Street</button>
+              <button class="style-pill" data-style="Liberty Walk">Liberty Walk</button>
+              <button class="style-pill" data-style="GT Racing">GT Racing</button>
+              <button class="style-pill" data-style="Sakura Neon">Sakura Neon</button>
+              <button class="style-pill" data-style="Anime Itasha">Anime Itasha</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label>// Car model</label>
+            <div class="car-selector">
+              <div class="car-option active" data-index="0">
+                <div class="car-name">GT-R R35</div>
+                <div class="car-class">S1 900</div>
+              </div>
+              <div class="car-option" data-index="1">
+                <div class="car-name">RX-7 FD</div>
+                <div class="car-class">A 800</div>
+              </div>
+              <div class="car-option" data-index="2">
+                <div class="car-name">Supra MK5</div>
+                <div class="car-class">S1 900</div>
+              </div>
+              <div class="car-option" data-index="3">
+                <div class="car-name">WRX STI</div>
+                <div class="car-class">A 800</div>
+              </div>
+              <div class="car-option" data-index="4">
+                <div class="car-name">NSX-R</div>
+                <div class="car-class">S1 900</div>
+              </div>
+              <div class="car-option" data-index="5">
+                <div class="car-name">Silvia S15</div>
+                <div class="car-class">B 700</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="generate-area">
+            <div class="generate-actions">
+              <button class="btn-generate">⚡ Generate Livery</button>
+              <button class="btn-ghost">🎲 Randomize</button>
+            </div>
+            <div class="ai-scan-bar">
+              <div class="scan-fill"></div>
+              <div class="scan-glint"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ Results Section ══════════ -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="results-header">
+        <div>
+          <div class="section-label reveal">FH6::GENERATED_LIVERIES</div>
+          <h2 class="section-title reveal">AI-Created Designs</h2>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ Community Section ══════════ -->
+  <section class="community" id="community">
+    <div class="container">
+      <div class="section-label reveal">FH6::TRENDING_NOW</div>
+      <h2 class="section-title reveal">Viral Community</h2>
+      <p class="section-subtitle reveal">Discover what the FH6 community is creating. Trending designs from creators worldwide.</p>
+
+      <div class="community-grid">
+        <!-- Trending 1 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.1s">
+          <div class="trend-preview">
+            <div class="trend-rank">#1</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,0,85,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">🏎️</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 2.8K &nbsp; 🔄 1.2K</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Neon Kaido</div>
+            <div class="trend-meta">by DriftKing · Tokyo Drift</div>
+          </div>
+        </div>
+
+        <!-- Trending 2 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.2s">
+          <div class="trend-preview">
+            <div class="trend-rank">#2</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,251,255,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">⚡</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 2.1K &nbsp; 🔄 984</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Cyber Phantom</div>
+            <div class="trend-meta">by PixelWraith · Cyberpunk</div>
+          </div>
+        </div>
+
+        <!-- Trending 3 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.3s">
+          <div class="trend-preview">
+            <div class="trend-rank">#3</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(123,47,247,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">🔥</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 1.9K &nbsp; 🔄 756</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Sakura Storm</div>
+            <div class="trend-meta">by NeonSakura · Sakura Neon</div>
+          </div>
+        </div>
+
+        <!-- Trending 4 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.4s">
+          <div class="trend-preview">
+            <div class="trend-rank">#4</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,255,136,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">💥</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 1.4K &nbsp; 🔄 623</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Midnight Rebel</div>
+            <div class="trend-meta">by StreetSamurai · JDM Street</div>
+          </div>
+        </div>
+
+        <!-- Trending 5 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.5s">
+          <div class="trend-preview">
+            <div class="trend-rank">#5</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,107,0,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">💨</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 1.2K &nbsp; 🔄 534</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Ghost Blade</div>
+            <div class="trend-meta">by WidebodyWorks · Liberty Walk</div>
+          </div>
+        </div>
+
+        <!-- Trending 6 -->
+        <div class="trending-card reveal-scale" style="transition-delay:0.6s">
+          <div class="trend-preview">
+            <div class="trend-rank">#6</div>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(230,230,0,0.2),transparent)"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:0.15">🏁</div>
+            <div class="trend-overlay">
+              <div class="trend-stats">❤️ 984 &nbsp; 🔄 412</div>
+            </div>
+          </div>
+          <div class="trend-info">
+            <div class="trend-creator">Blitz Sprint</div>
+            <div class="trend-meta">by RaceMaster · GT Racing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ Features Section ══════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label reveal">FH6::ENGINE_SPECS</div>
+      <h2 class="section-title reveal">Built for Creators</h2>
+      <p class="section-subtitle reveal">Everything you need to design the next viral FH6 livery.</p>
+
+      <div class="features-grid">
+        <div class="feature-card reveal" style="transition-delay:0.1s">
+          <div class="feature-icon">🎨</div>
+          <h3>AI Vinyl Concepts</h3>
+          <p>Generate unique vinyl layouts, racing stripes, and decal placements in seconds. AI understands FH6 design patterns.</p>
+        </div>
+
+        <div class="feature-card reveal" style="transition-delay:0.2s">
+          <div class="feature-icon">🌈</div>
+          <h3>Color Palette Engine</h3>
+          <p>Smart color matching that creates premium automotive palettes from any reference image. Inspired by real racing culture.</p>
+        </div>
+
+        <div class="feature-card reveal" style="transition-delay:0.3s">
+          <div class="feature-icon">⚡</div>
+          <h3>Ultra-Fast Ideation</h3>
+          <p>From concept to design in under 10 seconds. Iterate through hundreds of livery ideas before you even open FH6.</p>
+        </div>
+
+        <div class="feature-card reveal" style="transition-delay:0.4s">
+          <div class="feature-icon">🎯</div>
+          <h3>Style Matching</h3>
+          <p>AI recognizes Tokyo Drift, Initial D, Cyberpunk, and 12+ aesthetic styles. Get authentic designs every time.</p>
+        </div>
+
+        <div class="feature-card reveal" style="transition-delay:0.5s">
+          <div class="feature-icon">📋</div>
+          <h3>One-Click Prompts</h3>
+          <p>Copy optimized AI prompts ready for any image generation tool. Perfect for Midjourney, DALL·E, and Stable Diffusion.</p>
+        </div>
+
+        <div class="feature-card reveal" style="transition-delay:0.6s">
+          <div class="feature-icon">🌐</div>
+          <h3>Community Trends</h3>
+          <p>See what's viral in the FH6 community. Stay ahead with trending styles, colors, and design patterns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ Testimonials ══════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label reveal">FH6::CREATOR_VOICES</div>
+      <h2 class="section-title reveal">Loved by the Community</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" style="transition-delay:0.1s">
+          <div class="quote-icon">"</div>
+          <blockquote>This is insane. I generated a full Tokyo Drift RX-7 livery concept in under 10 seconds. The color palettes alone are worth it.</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info">
+              <div class="author-name">DriftKing</div>
+              <div class="author-role">FH6 Creator · 50K+ downloads</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" style="transition-delay:0.2s">
+          <div class="quote-icon">"</div>
+          <blockquote>Finally, an AI tool that understands FH6 livery culture. The style matching is incredibly accurate. My Supra has never looked this good.</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">PW</div>
+            <div class="author-info">
+              <div class="author-name">PixelWraith</div>
+              <div class="author-role">Livery Designer · Featured on Forza monthly</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" style="transition-delay:0.3s">
+          <div class="quote-icon">"</div>
+          <blockquote>I've been designing FH5 liveries for 3 years. This tool cuts my ideation time by 90%. It's like having a design team in your pocket.</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">NS</div>
+            <div class="author-info">
+              <div class="author-name">NeonSakura</div>
+              <div class="author-role">Car Photographer · JDM Enthusiast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA Section ══════════ -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <div class="section-label reveal" style="justify-content:center">FH6::GET_STARTED</div>
+        <h2 class="section-title reveal">Build the Next<br/>Legendary FH6 Livery</h2>
+        <p class="section-subtitle reveal" style="text-align:center">
+          Join thousands of creators designing the future of Forza Horizon 6 customization.
+          Your next viral livery is one click away.
+        </p>
+        <div class="cta-actions reveal">
+          <a href="#generator" class="btn-primary">
+            ⚡ Start Designing
+          </a>
+          <a href="#community" class="btn-secondary">
+            🔥 See What's Trending
+          </a>
+        </div>
+        <p class="cta-note">No sign-up required · Free to use · AI-powered</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ Footer ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          FH6 LIVERIES &mdash; AI-POWERED DESIGN FOR FORZA HORIZON 6
+        </div>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#generator">Generator</a></li>
+          <li><a href="#results">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ Modal ══════════ -->
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <div class="modal-preview">
+        <div class="modal-glow"></div>
+        <div style="font-size:5rem;opacity:0.3">🏎️</div>
+      </div>
+      <div class="modal-details">
+        <h2>Livery Preview</h2>
+        <p class="modal-desc">Loading details...</p>
+        <div class="modal-palette">
+          <div class="color-swatch" style="background:#ff0055"></div>
+          <div class="color-swatch" style="background:#00fbff"></div>
+          <div class="color-swatch" style="background:#ffffff"></div>
+          <div class="color-swatch" style="background:#000000"></div>
+        </div>
+        <div class="control-group">
+          <label>// AI Prompt</label>
+          <textarea class="prompt-input modal-prompt" readonly style="min-height:60px;font-size:0.8rem"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ Scripts ══════════ -->
+  <script src="script.js"></script>
+</body>
+</html>
