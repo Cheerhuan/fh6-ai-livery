@@ -244,6 +244,24 @@ class UIController {
     }
   }
 
+  getLiveryImage(style) {
+    const map = {
+      'Tokyo Drift': 'assets/liveries/tokyo-drift.svg',
+      'Initial D': 'assets/liveries/tokyo-drift.svg',
+      'Cyberpunk': 'assets/liveries/cyberpunk.svg',
+      'JDM Street': 'assets/liveries/jdm-street.svg',
+      'Liberty Walk': 'assets/liveries/liberty-walk.svg',
+      'GT Racing': 'assets/liveries/gt-racing.svg',
+      'Sakura Neon': 'assets/liveries/sakura-neon.svg',
+      'Anime Itasha': 'assets/liveries/sakura-neon.svg',
+      'Midnight Club': 'assets/liveries/cyberpunk.svg',
+      'Euro Tuner': 'assets/liveries/gt-racing.svg',
+      'Rally Cross': 'assets/liveries/liberty-walk.svg',
+      'VIP Style': 'assets/liveries/jdm-street.svg',
+    };
+    return map[style] || 'assets/liveries/tokyo-drift.svg';
+  }
+
   initScrollReveal() {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -395,11 +413,12 @@ class UIController {
     const card = document.createElement('div');
     card.className = 'result-card reveal';
     card.style.animationDelay = '0.1s';
+    const svg = this.getLiveryImage(livery.style);
     card.innerHTML = `
-      <div class="card-preview">
+      <div class="card-preview" style="background-image:url('${svg}');background-size:cover;background-position:center">
         <div class="preview-glow"></div>
         <div class="neon-stripes"></div>
-        <div class="car-silhouette" style="font-size:3.5rem">${livery.silhouette}</div>
+        <div class="car-silhouette" style="display:none">${livery.silhouette}</div>
         <div style="position:absolute;bottom:16px;left:16px;right:16px;display:flex;gap:4px">
           ${livery.palette.map(c => `<span style="width:24px;height:24px;border-radius:4px;background:${c};border:1px solid rgba(255,255,255,0.1)"></span>`).join('')}
         </div>
@@ -483,11 +502,12 @@ class UIController {
       const card = document.createElement('div');
       card.className = 'result-card reveal';
       card.style.transitionDelay = `${i * 0.1}s`;
+    const svg = this.getLiveryImage(ex.style);
       card.innerHTML = `
-        <div class="card-preview">
+        <div class="card-preview" style="background-image:url('${svg}');background-size:cover;background-position:center">
           <div class="preview-glow"></div>
           <div class="neon-stripes"></div>
-          <div class="car-silhouette" style="font-size:3.5rem">${sil}</div>
+          <div class="car-silhouette" style="display:none">${sil}</div>
           <div style="position:absolute;bottom:16px;left:16px;right:16px;display:flex;gap:4px">
             ${pal.map(c => `<span style="width:24px;height:24px;border-radius:4px;background:${c};border:1px solid rgba(255,255,255,0.1)"></span>`).join('')}
           </div>
