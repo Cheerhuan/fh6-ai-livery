@@ -223,10 +223,12 @@ class UIController {
     this.selectedStyle = 'Tokyo Drift';
     this.selectedCar = this.engine.cars[0];
     this.uploadedImage = null;
+    this.galleryImages = [];  // Populated from manifest
     this.init();
   }
 
-  init() {
+  async init() {
+    await this.loadGalleryManifest();
     this.initParticles();
     this.initScrollReveal();
     this.initNavigation();
@@ -237,6 +239,41 @@ class UIController {
     this.initSmoothScroll();
   }
 
+  async loadGalleryManifest() {
+    try {
+      const resp = await fetch('assets/liveries/manifest.json?v=' + Date.now());
+      const data = await resp.json();
+      this.galleryImages = (data.images || []).map(img => 'assets/liveries/' + img.file);
+    } catch (e) {
+      // Fallback: use default images
+      this.galleryImages = [
+        'assets/liveries/jdm-1.jpg',
+        'assets/liveries/jdm-2.jpg',
+        'assets/liveries/jdm-3.jpg',
+        'assets/liveries/jdm-4.jpg',
+        'assets/liveries/jdm-5.jpg',
+        'assets/liveries/jdm-6.jpg',
+        'assets/liveries/jdm-7.jpg',
+        'assets/liveries/jdm-8.jpg',
+        'assets/liveries/jdm-9.jpg',
+        'assets/liveries/jdm-10.jpg',
+      ];
+    }
+    // Shuffle
+    this.galleryImages.sort(() => Math.random() - 0.5);
+  }
+
+  pickGalleryImage(index) {
+    if (this.galleryImages.length === 0) return 'assets/liveries/jdm-1.jpg';
+    return this.galleryImages[index % this.galleryImages.length];
+  }
+
+  getRandomGalleryImages(count) {
+    // Return `count` random images without repeats
+    const shuffled = [...this.galleryImages].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, Math.min(count, shuffled.length));
+  }
+
   initParticles() {
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
@@ -244,22 +281,8 @@ class UIController {
     }
   }
 
-  getLiveryImage(style) {
-    const map = {
-      'Tokyo Drift': 'assets/liveries/supra-meet.jpg',
-      'Initial D': 'assets/liveries/skyline-civic.jpg',
-      'Cyberpunk': 'assets/liveries/tuned-car.jpg',
-      'JDM Street': 'assets/liveries/r32-skyline.jpg',
-      'Liberty Walk': 'assets/liveries/jdm-lineup.jpg',
-      'GT Racing': 'assets/liveries/car-gathering.jpg',
-      'Sakura Neon': 'assets/liveries/skyline-civic.jpg',
-      'Anime Itasha': 'assets/liveries/supra-meet.jpg',
-      'Midnight Club': 'assets/liveries/tuned-car.jpg',
-      'Euro Tuner': 'assets/liveries/car-gathering.jpg',
-      'Rally Cross': 'assets/liveries/jdm-lineup.jpg',
-      'VIP Style': 'assets/liveries/r32-skyline.jpg',
-    };
-    return map[style] || 'assets/liveries/supra-meet.jpg';
+  getLiveryImage(style, index) {
+    return this.pickGalleryImage(index || 0);
   }
 
   initScrollReveal() {
@@ -413,7 +436,7 @@ class UIController {
     const card = document.createElement('div');
     card.className = 'result-card reveal';
     card.style.animationDelay = '0.1s';
-    const svg = this.getLiveryImage(livery.style);
+    const svg = this.getLiveryImage(livery.style, 0) // newest card = first image
     card.innerHTML = `
       <div class="card-preview" style="background-image:url('${svg}');background-size:cover;background-position:center">
         <div class="preview-glow"></div>
@@ -502,7 +525,7 @@ class UIController {
       const card = document.createElement('div');
       card.className = 'result-card reveal';
       card.style.transitionDelay = `${i * 0.1}s`;
-    const svg = this.getLiveryImage(ex.style);
+    const svg = this.getLiveryImage(ex.style, i) // each card gets unique image
       card.innerHTML = `
         <div class="card-preview" style="background-image:url('${svg}');background-size:cover;background-position:center">
           <div class="preview-glow"></div>
