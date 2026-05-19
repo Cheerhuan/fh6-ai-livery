@@ -246,20 +246,20 @@ class UIController {
 
   getLiveryImage(style) {
     const map = {
-      'Tokyo Drift': 'assets/liveries/tokyo-drift.svg',
-      'Initial D': 'assets/liveries/tokyo-drift.svg',
-      'Cyberpunk': 'assets/liveries/cyberpunk.svg',
-      'JDM Street': 'assets/liveries/jdm-street.svg',
-      'Liberty Walk': 'assets/liveries/liberty-walk.svg',
-      'GT Racing': 'assets/liveries/gt-racing.svg',
-      'Sakura Neon': 'assets/liveries/sakura-neon.svg',
-      'Anime Itasha': 'assets/liveries/sakura-neon.svg',
-      'Midnight Club': 'assets/liveries/cyberpunk.svg',
-      'Euro Tuner': 'assets/liveries/gt-racing.svg',
-      'Rally Cross': 'assets/liveries/liberty-walk.svg',
-      'VIP Style': 'assets/liveries/jdm-street.svg',
+      'Tokyo Drift': 'assets/liveries/supra-meet.jpg',
+      'Initial D': 'assets/liveries/skyline-civic.jpg',
+      'Cyberpunk': 'assets/liveries/tuned-car.jpg',
+      'JDM Street': 'assets/liveries/r32-skyline.jpg',
+      'Liberty Walk': 'assets/liveries/jdm-lineup.jpg',
+      'GT Racing': 'assets/liveries/car-gathering.jpg',
+      'Sakura Neon': 'assets/liveries/skyline-civic.jpg',
+      'Anime Itasha': 'assets/liveries/supra-meet.jpg',
+      'Midnight Club': 'assets/liveries/tuned-car.jpg',
+      'Euro Tuner': 'assets/liveries/car-gathering.jpg',
+      'Rally Cross': 'assets/liveries/jdm-lineup.jpg',
+      'VIP Style': 'assets/liveries/r32-skyline.jpg',
     };
-    return map[style] || 'assets/liveries/tokyo-drift.svg';
+    return map[style] || 'assets/liveries/supra-meet.jpg';
   }
 
   initScrollReveal() {
