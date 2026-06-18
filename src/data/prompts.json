@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Cozy Aesthetic Scrapbook Style",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2050272100884340783/0.jpg",
+    "full_prompt": "Transform the provided reference image into a cozy aesthetic scrapbook-style composition while strictly preserving the original subject, identity, pose, lighting, and background.\n\nAdd multiple small “mini version” characters of the same person (chibi / doll-like style), placed naturally around the scene (on objects, table, shoulder, etc.). These mini figures must match the subject’s face, hairstyle, outfit, and vibe consistently, styled as cute 3D collectible figurines. Show them doing different activities (reading, posing, taking photos, relaxing).\n\nOverlay handwritten-style doodles and annotations across the image: arrows, hearts, stars, sparkles, icons, and playful captions connected to elements in the scene.\n\nUse a soft pastel color palette (white base with pink, peach, blue accents).\n\nKeep the frame visually rich and filled but balanced and clean.\n\nStyle: warm, cozy lighting, dreamy Instagram scrapbook aesthetic, soft depth of field, highly detailed, polished but playful.\n\nThe final result must look like the SAME original image enhanced with mini alter-egos and aesthetic annotations — not a recreated or different scene.",
+    "model": "GPT Image",
+    "creator": "@Kashberg_0",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 2,
+    "title": "FIFA World Cup 2026 Match Day Posters",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2056649217364672950/0.jpg",
+    "full_prompt": "Ultra-realistic football match day poster design, Cristiano Ronaldo seen from the back wearing Portugal red jersey number 7, fist raised in victory, walking forward confidently, giant bold typography “MATCH DAY” behind player, modern sports graphic design, Portugal vs Colombia logos at top, FIFA World Cup 2026 branding, cinematic stadium atmosphere, textured off-white background, national flag elements blended diagonally, dramatic lighting, dust particles, high-detail jersey fabric, centered composition, editorial sports poster style, minimal premium layout, green red yellow color palette, realistic shadows, sharp focus, Nike/Puma style campaign aesthetic, 4k.",
+    "model": "GPT Image",
+    "creator": "@Sairah_0",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 3,
+    "title": "Tide Detergent Advertising Poster",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2056987256020472057/0.jpg",
+    "full_prompt": "FORMAT: 4:5 vertical premium FMCG SMM poster hyper-realistic detergent advertising luxury commercial product photography Instagram + billboard hybrid composition. CONCEPT: Tide adapts its own authentic global FMCG identity; bold orange-and-yellow brand dominance; clean energy-driven composition; high-trust household advertising aesthetic; performance-focused stain-removal storytelling. Scene: A modern Indian luxury laundry room with warm morning sunlight. Features a young Indian mother holding a clean white shirt, with a subtle background containing a washing machine and laundry basket. Hero Placement: Large Tide detergent pack in the lower-center foreground. Geometry: Dynamic circular composition inspired by the Tide logo. Layout: Large negative space in the upper-left for typography. Ultra-realistic packaging with water splashes, detergent particle simulations, and orange-yellow glow accents. Main Headline: “TOUGH ON STAINS.” Secondary Line: “GENTLE ON FABRIC.” Subheading: “India’s trusted clean for everyday life.” Call to Action (CTA): “SHOP NOW”",
+    "model": "GPT Image",
+    "creator": "@Diplomeme",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 4,
+    "title": "DESIRE THE WORK Sportswear Campaign",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2061841134675173556/0.jpg",
+    "full_prompt": "Create a hyper-realistic global sportswear campaign poster titled: \"DESIRE THE WORK.\" IMPORTANT: This should NOT look like a sportswear catalog. This should feel like the most expensive Nike campaign never made. The image must stop viewers instantly, even as a tiny mobile thumbnail. The goal is pure visual impact. FORMAT: Vertical premium poster. Luxury editorial sports photography. One image. Four athletes. One obsession. Top Left: Elite female sprinter exploding from blocks (low angle, maximum muscle tension, sweat droplets). Top Right: Male basketball player at the apex of a dunk (rain falling, halo lighting, athletic physique). Bottom Left: Female boxer wrapping hands (close-up, direct eye contact, focused breathing, \"dangerous\" feel). Bottom Right: Male footballer striking a ball (wet jersey, exploding turf, visible veins in forearms). Centerpiece: An abstract, fractured \"swoosh-inspired\" shape created naturally from sweat, rain, chalk dust, and motion trails (no literal logo). Massive condensed bold lettering: \"DESIRE THE WORK\".",
+    "model": "GPT Image",
+    "creator": "@hemayxn",
+    "tier": "free",
+    "_source": "meigen.ai"
+  }
+]
