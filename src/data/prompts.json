@@ -1,9 +1,10 @@
 [
+[
   {
     "id": 1,
     "title": "Cozy Aesthetic Scrapbook Style",
     "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2050272100884340783/0.jpg",
-    "full_prompt": "Transform the provided reference image into a cozy aesthetic scrapbook-style composition while strictly preserving the original subject, identity, pose, lighting, and background.\n\nAdd multiple small “mini version” characters of the same person (chibi / doll-like style), placed naturally around the scene (on objects, table, shoulder, etc.). These mini figures must match the subject’s face, hairstyle, outfit, and vibe consistently, styled as cute 3D collectible figurines. Show them doing different activities (reading, posing, taking photos, relaxing).\n\nOverlay handwritten-style doodles and annotations across the image: arrows, hearts, stars, sparkles, icons, and playful captions connected to elements in the scene.\n\nUse a soft pastel color palette (white base with pink, peach, blue accents).\n\nKeep the frame visually rich and filled but balanced and clean.\n\nStyle: warm, cozy lighting, dreamy Instagram scrapbook aesthetic, soft depth of field, highly detailed, polished but playful.\n\nThe final result must look like the SAME original image enhanced with mini alter-egos and aesthetic annotations — not a recreated or different scene.",
+    "full_prompt": "Transform the provided reference image into a cozy aesthetic scrapbook-style composition while strictly preserving the original subject, identity, pose, lighting, and background.\\n\\nAdd multiple small “mini version” characters of the same person (chibi / doll-like style), placed naturally around the scene (on objects, table, shoulder, etc.). These mini figures must match the subject’s face, hairstyle, outfit, and vibe consistently, styled as cute 3D collectible figurines. Show them doing different activities (reading, posing, taking photos, relaxing).\\n\\nOverlay handwritten-style doodles and annotations across the image: arrows, hearts, stars, sparkles, icons, and playful captions connected to elements in the scene.\\n\\nUse a soft pastel color palette (white base with pink, peach, blue accents).\\n\\nKeep the frame visually rich and filled but balanced and clean.\\n\\nStyle: warm, cozy lighting, dreamy Instagram scrapbook aesthetic, soft depth of field, highly detailed, polished but playful.\\n\\nThe final result must look like the SAME original image enhanced with mini alter-egos and aesthetic annotations — not a recreated or different scene.",
     "model": "GPT Image",
     "creator": "@Kashberg_0",
     "tier": "free",
@@ -33,9 +34,39 @@
     "id": 4,
     "title": "DESIRE THE WORK Sportswear Campaign",
     "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2061841134675173556/0.jpg",
-    "full_prompt": "Create a hyper-realistic global sportswear campaign poster titled: \"DESIRE THE WORK.\" IMPORTANT: This should NOT look like a sportswear catalog. This should feel like the most expensive Nike campaign never made. The image must stop viewers instantly, even as a tiny mobile thumbnail. The goal is pure visual impact. FORMAT: Vertical premium poster. Luxury editorial sports photography. One image. Four athletes. One obsession. Top Left: Elite female sprinter exploding from blocks (low angle, maximum muscle tension, sweat droplets). Top Right: Male basketball player at the apex of a dunk (rain falling, halo lighting, athletic physique). Bottom Left: Female boxer wrapping hands (close-up, direct eye contact, focused breathing, \"dangerous\" feel). Bottom Right: Male footballer striking a ball (wet jersey, exploding turf, visible veins in forearms). Centerpiece: An abstract, fractured \"swoosh-inspired\" shape created naturally from sweat, rain, chalk dust, and motion trails (no literal logo). Massive condensed bold lettering: \"DESIRE THE WORK\".",
+    "full_prompt": "Create a hyper-realistic global sportswear campaign poster titled: \\\"DESIRE THE WORK.\\\" IMPORTANT: This should NOT look like a sportswear catalog. This should feel like the most expensive Nike campaign never made. The image must stop viewers instantly, even as a tiny mobile thumbnail. The goal is pure visual impact. FORMAT: Vertical premium poster. Luxury editorial sports photography. One image. Four athletes. One obsession. Top Left: Elite female sprinter exploding from blocks (low angle, maximum muscle tension, sweat droplets). Top Right: Male basketball player at the apex of a dunk (rain falling, halo lighting, athletic physique). Bottom Left: Female boxer wrapping hands (close-up, direct eye contact, focused breathing, \\\"dangerous\\\" feel). Bottom Right: Male footballer striking a ball (wet jersey, exploding turf, visible veins in forearms). Centerpiece: An abstract, fractured \\\"swoosh-inspired\\\" shape created naturally from sweat, rain, chalk dust, and motion trails (no literal logo). Massive condensed bold lettering: \\\"DESIRE THE WORK\\\".",
     "model": "GPT Image",
     "creator": "@hemayxn",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 5,
+    "title": "Maximalist Commercial Beverage Posters",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2050597251966529663/0.jpg",
+    "full_prompt": "FORMAT: 4:5 vertical, 8K CORE IDEA: Mango energy overflowing. LAYOUT: BACKGROUND: Deep mango yellow → orange gradient block with paint splashes and organic textures. TYPOGRAPHY: Thick, bold, stretched \"MANGO\" layered behind the subject. PRODUCT: Real Mango bottle, forward-facing. SURREAL ELEMENTS: Mango pulp exploding outward, rotating whole mangoes/slices, and juice drips forming waves/clouds. ACCENTS: Dripping textures, liquid blobs, and glossy highlights. COPY: Center: \"GO FULL MANGO.\" | Bottom: Real Fruit, Thick & Rich, No Preservatives. FEEL: Rich, Dense, Indulgent chaos.",
+    "model": "GPT Image",
+    "creator": "@Diplomeme",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 6,
+    "title": "Hyper-realistic Luxury Perfume Product Photo",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2019404118486389234/0.jpg",
+    "full_prompt": "{\n\"prompt\": {\n\"subject\": \"Hyper-realistic luxury perfume product photograph\",\n\"product\": {\n\"bottle\": {\n\"shape\": \"Rectangular\",\n\"material\": \"Transparent glass\",\n\"label\": {\n\"text\": \"CUCCI\",\n\"color\": \"Soft blush-pink\",\n\"texture\": \"Matte\"\n},\n\"cap\": {\n\"color\": \"Soft blush-pink\",\n\"texture\": \"Matte\"\n},\n\"placement\": {\n\"angle\": \"Gentle diagonal\",\n\"position\": \"Center\"\n},\n\"details\": {\n\"liquid\": \"Visible, with soft reflections\",\n\"highlights\": \"Glowing on glass edges\"\n}\n}\n},\n\"environment\": {\n\"setting\": \"Lush miniature fantasy meadow\",\n\"ground\": \"Moss-covered\",\n\"flora\": {\n\"flowers\": [\"Delicate pink\", \"Lavender\", \"Coral wildflowers\"],\n\"grasses\": \"Soft green\"\n},\n\"atmosphere\": {\n\"air\": \"Tiny petals drifting\",\n\"mist\": \"Faint, floating low\"\n}\n},\n\"lighting\": {\n\"source\": \"Warm golden-pink light from upper left\",\n\"effect\": \"Dreamy sunset\",\n\"type\": \"Studio-grade with subtle rim light\"\n},\n\"composition\": {\n\"depth_of_field\": \"Cinematic shallow\",\n\"focus\": \"Crisp on the brand name\",\n\"foreground\": \"Softly blurred blooms\",\n\"background\": {\n\"description\": \"Fading into a pastel bokeh haze\",\n\"elements\": [\"Florals\", \"Foliage\"],\n\"colors\": [\"Pink\", \"Peach\", \"Violet\"]\n}\n},\n\"style\": {\n\"aesthetic\": \"High-end editorial beauty\",\n\"mood\": \"Romantic and ethereal\",\n\"realism\": \"Premium realism\",\n\"quality\": \"8K\",\n\"textures\": \"Ultra-detailed (moss, petals, glass, label)\"\n}\n}\n}",
+    "model": "NanoBanana Pro",
+    "creator": "@YaseenK7212",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 7,
+    "title": "Branded Technical Infographic for Snacks",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2017669983916982605/0.jpg",
+    "full_prompt": "Create a branded technical infographic of a [SNACK], combining a realistic photograph or photoreal render of the product with technical annotation overlays placed directly on top. Use black ink–style line drawings with strategic [BRAND COLOR] accents (architectural sketch look) on a pure white studio background, including:\\n• Key component labels\\n• Internal cross-section showing structure, layering, or internal design\\n• Measurements, dimensions, and specifications\\n• Material callouts with composition and quantities\\n• Arrows indicating function for primary features and structural integrity\\n• Simple schematic or sectional diagram showing key mechanical or design elements\\n• Sustainability callouts\\n\\nTitle placement: Inside a hand-drawn technical annotation box with accent border reading the product name in bold font, positioned in upper corner.\\n\\nStyle & layout rules:\\n• The realistic product remains clearly visible\\n• Annotations feel sketched, technical, and architectural\\n• Accents used for highlight (20-30% of linework), black for primary technical lines (70-80%)\\n• Clean composition with balanced negative space\\n• Educational, food-engineering vibe with premium branding\\n• Include subtle brand logo mark in corner\\n\\nVisual style: Minimal technical illustration aesthetic, black linework with accents over realistic imagery, precise but slightly hand-drawn feel.\\n\\nColor palette: White background, black annotation lines/text, [BRAND COLOR] for accents and key callouts only.\\n\\nOutput: 1080×1080, ultra-crisp, social-feed optimized, no watermark",
+    "model": "NanoBanana Pro",
+    "creator": "@TechieBySA",
     "tier": "free",
     "_source": "meigen.ai"
   }
