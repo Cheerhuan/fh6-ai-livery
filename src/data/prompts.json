@@ -1,5 +1,4 @@
 [
-[
   {
     "id": 1,
     "title": "Cozy Aesthetic Scrapbook Style",
@@ -44,7 +43,7 @@
     "id": 5,
     "title": "Maximalist Commercial Beverage Posters",
     "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2050597251966529663/0.jpg",
-    "full_prompt": "FORMAT: 4:5 vertical, 8K CORE IDEA: Mango energy overflowing. LAYOUT: BACKGROUND: Deep mango yellow → orange gradient block with paint splashes and organic textures. TYPOGRAPHY: Thick, bold, stretched \"MANGO\" layered behind the subject. PRODUCT: Real Mango bottle, forward-facing. SURREAL ELEMENTS: Mango pulp exploding outward, rotating whole mangoes/slices, and juice drips forming waves/clouds. ACCENTS: Dripping textures, liquid blobs, and glossy highlights. COPY: Center: \"GO FULL MANGO.\" | Bottom: Real Fruit, Thick & Rich, No Preservatives. FEEL: Rich, Dense, Indulgent chaos.",
+    "full_prompt": "FORMAT: 4:5 vertical, 8K CORE IDEA: Mango energy overflowing. LAYOUT: BACKGROUND: Deep mango yellow → orange gradient block with paint splashes and organic textures. TYPOGRAPHY: Thick, bold, stretched \\\"MANGO\\\" layered behind the subject. PRODUCT: Real Mango bottle, forward-facing. SURREAL ELEMENTS: Mango pulp exploding outward, rotating whole mangoes/slices, and juice drips forming waves/clouds. ACCENTS: Dripping textures, liquid blobs, and glossy highlights. COPY: Center: \\\"GO FULL MANGO.\\\" | Bottom: Real Fruit, Thick & Rich, No Preservatives. FEEL: Rich, Dense, Indulgent chaos.",
     "model": "GPT Image",
     "creator": "@Diplomeme",
     "tier": "free",
@@ -54,7 +53,7 @@
     "id": 6,
     "title": "Hyper-realistic Luxury Perfume Product Photo",
     "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2019404118486389234/0.jpg",
-    "full_prompt": "{\n\"prompt\": {\n\"subject\": \"Hyper-realistic luxury perfume product photograph\",\n\"product\": {\n\"bottle\": {\n\"shape\": \"Rectangular\",\n\"material\": \"Transparent glass\",\n\"label\": {\n\"text\": \"CUCCI\",\n\"color\": \"Soft blush-pink\",\n\"texture\": \"Matte\"\n},\n\"cap\": {\n\"color\": \"Soft blush-pink\",\n\"texture\": \"Matte\"\n},\n\"placement\": {\n\"angle\": \"Gentle diagonal\",\n\"position\": \"Center\"\n},\n\"details\": {\n\"liquid\": \"Visible, with soft reflections\",\n\"highlights\": \"Glowing on glass edges\"\n}\n}\n},\n\"environment\": {\n\"setting\": \"Lush miniature fantasy meadow\",\n\"ground\": \"Moss-covered\",\n\"flora\": {\n\"flowers\": [\"Delicate pink\", \"Lavender\", \"Coral wildflowers\"],\n\"grasses\": \"Soft green\"\n},\n\"atmosphere\": {\n\"air\": \"Tiny petals drifting\",\n\"mist\": \"Faint, floating low\"\n}\n},\n\"lighting\": {\n\"source\": \"Warm golden-pink light from upper left\",\n\"effect\": \"Dreamy sunset\",\n\"type\": \"Studio-grade with subtle rim light\"\n},\n\"composition\": {\n\"depth_of_field\": \"Cinematic shallow\",\n\"focus\": \"Crisp on the brand name\",\n\"foreground\": \"Softly blurred blooms\",\n\"background\": {\n\"description\": \"Fading into a pastel bokeh haze\",\n\"elements\": [\"Florals\", \"Foliage\"],\n\"colors\": [\"Pink\", \"Peach\", \"Violet\"]\n}\n},\n\"style\": {\n\"aesthetic\": \"High-end editorial beauty\",\n\"mood\": \"Romantic and ethereal\",\n\"realism\": \"Premium realism\",\n\"quality\": \"8K\",\n\"textures\": \"Ultra-detailed (moss, petals, glass, label)\"\n}\n}\n}",
+    "full_prompt": "{\\n\\\"prompt\\\": {\\n\\\"subject\\\": \\\"Hyper-realistic luxury perfume product photograph\\\",\\n\\\"product\\\": {\\n\\\"bottle\\\": {\\n\\\"shape\\\": \\\"Rectangular\\\",\\n\\\"material\\\": \\\"Transparent glass\\\",\\n\\\"label\\\": {\\n\\\"text\\\": \\\"CUCCI\\\",\\n\\\"color\\\": \\\"Soft blush-pink\\\",\\n\\\"texture\\\": \\\"Matte\\\"\\n},\\n\\\"cap\\\": {\\n\\\"color\\\": \\\"Soft blush-pink\\\",\\n\\\"texture\\\": \\\"Matte\\\"\\n},\\n\\\"placement\\\": {\\n\\\"angle\\\": \\\"Gentle diagonal\\\",\\n\\\"position\\\": \\\"Center\\\"\\n},\\n\\\"details\\\": {\\n\\\"liquid\\\": \\\"Visible, with soft reflections\\\",\\n\\\"highlights\\\": \\\"Glowing on glass edges\\\"\\n}\\n}\\n},\\n\\\"environment\\\": {\\n\\\"setting\\\": \\\"Lush miniature fantasy meadow\\\",\\n\\\"ground\\\": \\\"Moss-covered\\\",\\n\\\"flora\\\": {\\n\\\"flowers\\\": [\\\"Delicate pink\\\", \\\"Lavender\\\", \\\"Coral wildflowers\\\"],\\n\\\"grasses\\\": \\\"Soft green\\\"\\n},\\n\\\"atmosphere\\\": {\\n\\\"air\\\": \\\"Tiny petals drifting\\\",\\n\\\"mist\\\": \\\"Faint, floating low\\\"\\n}\\n},\\n\\\"lighting\\\": {\\n\\\"source\\\": \\\"Warm golden-pink light from upper left\\\",\\n\\\"effect\\\": \\\"Dreamy sunset\\\",\\n\\\"type\\\": \\\"Studio-grade with subtle rim light\\\"\\n},\\n\\\"composition\\\": {\\n\\\"depth_of_field\\\": \\\"Cinematic shallow\\\",\\n\\\"focus\\\": \\\"Crisp on the brand name\\\",\\n\\\"foreground\\\": \\\"Softly blurred blooms\\\",\\n\\\"background\\\": {\\n\\\"description\\\": \\\"Fading into a pastel bokeh haze\\\",\\n\\\"elements\\\": [\\\"Florals\\\", \\\"Foliage\\\"],\\n\\\"colors\\\": [\\\"Pink\\\", \\\"Peach\\\", \\\"Violet\\\"]\\n}\\n},\\n\\\"style\\\": {\\n\\\"aesthetic\\\": \\\"High-end editorial beauty\\\",\\n\\\"mood\\\": \\\"Romantic and ethereal\\\",\\n\\\"realism\\\": \\\"Premium realism\\\",\\n\\\"quality\\\": \\\"8K\\\",\\n\\\"textures\\\": \\\"Ultra-detailed (moss, petals, glass, label)\\\"\\n}\\n}\\n}",
     "model": "NanoBanana Pro",
     "creator": "@YaseenK7212",
     "tier": "free",
@@ -67,6 +66,26 @@
     "full_prompt": "Create a branded technical infographic of a [SNACK], combining a realistic photograph or photoreal render of the product with technical annotation overlays placed directly on top. Use black ink–style line drawings with strategic [BRAND COLOR] accents (architectural sketch look) on a pure white studio background, including:\\n• Key component labels\\n• Internal cross-section showing structure, layering, or internal design\\n• Measurements, dimensions, and specifications\\n• Material callouts with composition and quantities\\n• Arrows indicating function for primary features and structural integrity\\n• Simple schematic or sectional diagram showing key mechanical or design elements\\n• Sustainability callouts\\n\\nTitle placement: Inside a hand-drawn technical annotation box with accent border reading the product name in bold font, positioned in upper corner.\\n\\nStyle & layout rules:\\n• The realistic product remains clearly visible\\n• Annotations feel sketched, technical, and architectural\\n• Accents used for highlight (20-30% of linework), black for primary technical lines (70-80%)\\n• Clean composition with balanced negative space\\n• Educational, food-engineering vibe with premium branding\\n• Include subtle brand logo mark in corner\\n\\nVisual style: Minimal technical illustration aesthetic, black linework with accents over realistic imagery, precise but slightly hand-drawn feel.\\n\\nColor palette: White background, black annotation lines/text, [BRAND COLOR] for accents and key callouts only.\\n\\nOutput: 1080×1080, ultra-crisp, social-feed optimized, no watermark",
     "model": "NanoBanana Pro",
     "creator": "@TechieBySA",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 8,
+    "title": "Y2K Japanese Street-Editorial Collage",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2052279857904550335/0.jpg",
+    "full_prompt": "Create a bold Y2K Japanese street-editorial collage poster with a clean high-fashion magazine aesthetic, gritty paper textures, torn magazine cutouts, distressed ink splashes, and urban Tokyo-inspired design.\\n\\nMain composition: one large cinematic close-up portrait at the top with intense eye focus, natural skin texture, glossy lips, messy tied-up hair, no glasses, soft dramatic lighting, confident innocent expression, ultra-realistic fashion photography style.\\n\\nBottom composition: only 2 smaller portrait collage frames showing different facial expressions and angles, styled like ripped polaroids taped onto the poster.\\n\\nDesign elements: oversized bold Japanese typography, minimal English text, subtle Japanese street signs, barcode stickers, newspaper scraps, vintage grunge textures, paint strokes, film grain, tape pieces, layered paper collage effects, and premium editorial magazine layout aesthetics.\\n\\nStyle: edgy yet clean, modern Japanese fashion zine, cinematic shadows, sharp eye detail, RAW DSLR realism, editorial streetwear moodboard, premium graphic design, ultra detailed, 8K, balanced neutral tones, no pink aesthetic, no bubbles, no cartoon vibe.",
+    "model": "GPT Image",
+    "creator": "@miratechtool",
+    "tier": "free",
+    "_source": "meigen.ai"
+  },
+  {
+    "id": 9,
+    "title": "Graphic Designed Shoe Advertisement",
+    "image": "https://images.meigen.ai/cdn-cgi/image/format=auto,quality=85/tweets/2054219105956495361/0.jpg",
+    "full_prompt": "Generate a perfectly graphic designed poster of Shoe advertisement, The character should be in the Air with a pose that shows the Big joggers with green strips same as the shirt color. The outfit should be modern baggie cool outfit and a Big text in beautiful font perfectly merged in the background and the some other texts about the shoes and the company.",
+    "model": "GPT Image",
+    "creator": "@Ozayrr_irl",
     "tier": "free",
     "_source": "meigen.ai"
   }
